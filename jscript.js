@@ -1,7 +1,3 @@
-function testJS() {
-	alert("test!");
-}
-
 // this is a comment, I'm useless.
 function shake8ball() {
 	//change image on click.
