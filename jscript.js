@@ -21,3 +21,10 @@ var list = ["It is so",
 function randNumber () {
 	return Math.floor(Math.random() * 10);
 }
+
+//Below is the code for Tic Tac Toe
+
+//Handles X and O turns for Tic Tac Toe
+function turn(location) {
+	document.getElementById(location).innerHTML = "X";
+}
