@@ -1,4 +1,4 @@
-// this is a comment, I'm useless.
+
 function shake8ball() {
 	//change image on click.
 //	document.getElementById("magic8ball").src="magic8ball2.jpg";
@@ -22,6 +22,9 @@ var list = ["It is so",
 function randNumber () {
 	return Math.floor(Math.random() * 10);
 }
+
+
+
 
 
 //Below is the code for Tic Tac Toe
@@ -73,12 +76,40 @@ function checkWinner() {
 	var	r3c2 = document.getElementById("r3c2").innerHTML;
 	var	r3c3 = document.getElementById("r3c3").innerHTML;
 
-	if(r1c1 == r1c2 && r1c1 == r1c3 && r1c1 != "" || r2c1 == r2c2 && r2c1 == r2c3 && r2c1 != "" || r3c1 == r3c2 && r3c1 == r3c3 && r3c1 != "") {
+	if(r1c1 == r1c2 && r1c1 == r1c3 && r1c1 != "" ||
+	 r2c1 == r2c2 && r2c1 == r2c3 && r2c1 != "" || 
+	 r3c1 == r3c2 && r3c1 == r3c3 && r3c1 != "" || 
+	 r1c1 == r2c1 && r1c1 == r3c1 && r1c1 != "" ) {
 
 		alert("Winner!");
 	}
 
 }
+
+//flashcards thingy
+
+function addValues() {
+	var a = parseInt(document.getElementById("boxa").value);
+	var b = parseInt(document.getElementById("boxb").value);
+
+	var c = a+b;
+	document.getElementById("boxc").value = c;
+}
+
+
+function randomBoxOne() {
+	return Math.floor(Math.random() * 10);
+	document.getElementById("randomBoxOne").innerHTML=list[randNumber()];
+}
+
+
+
+
+
+
+
+
+
 
 
 
