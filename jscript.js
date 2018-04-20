@@ -1,4 +1,3 @@
-
 function shake8ball() {
 	//change image on click.
 //	document.getElementById("magic8ball").src="magic8ball2.jpg";
@@ -88,24 +87,47 @@ function checkWinner() {
 
 //flashcards thingy
 
+
+//Generate random number for flashcards number guessing/flashcards
+var randomNumberBetween0and19a = Math.floor(Math.random() * 20);
+var randomNumberBetween0and19b = Math.floor(Math.random() * 20);
+//Above it generates two random numbers between 0 and 19 for two text boxes.
+
+
+
+function randomWholeNum() {
+  document.getElementById("boxa").value = a;
+  document.getElementById("boxb").value = b;
+
+  var a = randomNumberBetween0and19a;
+  var b = randomNumberBetween0and19b;
+
+}
+
+var answer = document.getElementById("boxc");
+var addedNums = a+b;
+
+function checkAnswer() {
+
+	if addedNums == answer {
+		alert("Your answer is correct! Yay! I really don't care tho");
+	}else{
+		alert("You screwed up and got the answer wrong!")
+	}
+}
+
+
+
+/*
+//The below function is not relevent and is just here for looks.
 function addValues() {
 	var a = parseInt(document.getElementById("boxa").value);
 	var b = parseInt(document.getElementById("boxb").value);
-
+Sent up
 	var c = a+b;
 	document.getElementById("boxc").value = c;
 }
-
-
-function randomBoxOne() {
-	return Math.floor(Math.random() * 10);
-	document.getElementById("randomBoxOne").innerHTML=list[randNumber()];
-}
-
-
-
-
-
+*/
 
 
 
